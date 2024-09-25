@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=https://13.48.57.168/">
     <title>Redirecting...</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            // Get the current GitHub Pages URL (if you need to manipulate it)
+            var currentUrl = window.location.href;
+            
+            // Manipulate the target URL (EC2 site) as needed
+            var targetUrl = "https://13.48.57.168/?source=github";
+
+            // Optional: you can extract parts of the current URL and add them to the target URL
+            // For example, if you want to pass the current path to the EC2 site:
+            // var targetUrl = "https://13.48.57.168" + window.location.pathname + "?source=github";
+
+            // Redirect to the manipulated URL
+            window.location.href = targetUrl;
+        };
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://13.48.57.168/">link to the WordPress site</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="https://13.48.57.168/?source=github">link to the WordPress site</a>.</p>
 </body>
 </html>
